@@ -2,7 +2,7 @@
 //  AMNetworkingTests.swift
 //  AMNetworkingTests
 //
-//  Created by Attiq on 8/19/18.
+//  Created by Adnan Munir on 8/19/18.
 //  Copyright © 2018 Admin. All rights reserved.
 //
 

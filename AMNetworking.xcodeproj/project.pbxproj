@@ -10,6 +10,8 @@
 		CB9B050A212950A70017CA5B /* AMNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B0500212950A60017CA5B /* AMNetworking.framework */; };
 		CB9B050F212950A70017CA5B /* AMNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B050E212950A70017CA5B /* AMNetworkingTests.swift */; };
 		CB9B0511212950A70017CA5B /* AMNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9B0503212950A60017CA5B /* AMNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB9B051C212952970017CA5B /* GenericAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B051A212952960017CA5B /* GenericAPIClient.swift */; };
+		CB9B051D212952970017CA5B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B051B212952970017CA5B /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		CB9B0509212950A70017CA5B /* AMNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B050E212950A70017CA5B /* AMNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMNetworkingTests.swift; sourceTree = "<group>"; };
 		CB9B0510212950A70017CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9B051A212952960017CA5B /* GenericAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericAPIClient.swift; sourceTree = "<group>"; };
+		CB9B051B212952970017CA5B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		CB9B0502212950A60017CA5B /* AMNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				CB9B051A212952960017CA5B /* GenericAPIClient.swift */,
+				CB9B051B212952970017CA5B /* Result.swift */,
 				CB9B0503212950A60017CA5B /* AMNetworking.h */,
 				CB9B0504212950A60017CA5B /* Info.plist */,
 			);
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					CB9B04FF212950A60017CA5B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					CB9B0508212950A70017CA5B = {
@@ -196,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9B051D212952970017CA5B /* Result.swift in Sources */,
+				CB9B051C212952970017CA5B /* GenericAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 		CB9B0515212950A70017CA5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systems.testApp.AMNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +365,7 @@
 		CB9B0516212950A70017CA5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +386,7 @@
 		CB9B0518212950A70017CA5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AMNetworkingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +400,7 @@
 		CB9B0519212950A70017CA5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AMNetworkingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
